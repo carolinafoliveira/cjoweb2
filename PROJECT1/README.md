@@ -1,18 +1,53 @@
-## Getting Started
+# ☕ Projeto Java - ADS IFSP
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Repositório criado para armazenar as aulas, exercícios e projetos desenvolvidos durante a disciplina de Java do curso de Análise e Desenvolvimento de Sistemas.
 
-## Folder Structure
+## 📚 Disciplina
 
-The workspace contains two folders by default, where:
+- **Disciplina:** Desenvolvimento WEB 2
+- **Professor:** Prof. Me. Fernando Vieira Duarte
+- **Instituição:** Instituto Federal de São Paulo (IFSP)
+- **Curso:** Análise e Desenvolvimento de Sistemas (ADS)
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## 📂 Estrutura do Projeto
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+```
+PROJECT1
+│
+├── src
+│   ├── Aula_05_08_26
+│   └── exercicios_conteudo2
+│
+├── lib
+└── README.md
+```
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## 📖 Conteúdo estudado
 
-## Dependency Management
+- Variáveis
+- Tipos de dados
+- Operadores
+- Entrada e saída de dados
+- JOptionPane
+- Estruturas de decisão
+- Estruturas de repetição
+- Métodos
+- Vetores
+- Matrizes
+- Programação Orientada a Objetos (POO)
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## 🛠 Tecnologias
+
+- Java 21
+- Visual Studio Code
+- Extension Pack for Java
+
+## 👩‍💻 Desenvolvido por
+
+**Carolina Oliveira**
+
+Estudante de Análise e Desenvolvimento de Sistemas – IFSP.
+
+---
+
+> Repositório criado para fins acadêmicos, contendo exercícios, exemplos e projetos desenvolvidos durante as aulas ministradas pelo **Prof. Me. Fernando Vieira Duarte**.
