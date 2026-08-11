@@ -18,7 +18,7 @@ public class ex01 {
         consumoTotal = racao * 2 * 5; // dois gatos em 5 dias
         resultado = pesoGr - consumoTotal;
 
-        JOptionPane.showMessageDialog(null, "Consumo dos gatos em 5 dias = " + resultado);
+        JOptionPane.showMessageDialog(null, "Ração restante após 5 dias = = " + resultado);
     }
 }
 

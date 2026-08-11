@@ -13,7 +13,7 @@ public class ex02 {
         custoPeca = Float.parseFloat(JOptionPane.showInputDialog("Digite o custo total do espetáculo teatral (R$):"));
         precoConvite = Float.parseFloat(JOptionPane.showInputDialog("Digite o preço do convite individual (R$):"));
 
-        quantidadeConvite = custoPeca / precoConvite; //ponto de equilibrio contábil = custo total / margem de contribuiçao
+        quantidadeConvite = custoPeca / precoConvite; // quantidade mínima de convites = custo do espetáculo / preço do convite
 
         JOptionPane.showMessageDialog(null, "Venda minima deve ser de " + quantidadeConvite + " convites");
     }
