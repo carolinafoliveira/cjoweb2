@@ -12,8 +12,8 @@ public class ex03 {
 
         float precoDiaria, descontoDiaria, precoFinal, percentual;
 
-        precoDiaria = Float.parseFloat(JOptionPane.showInputDialog("Informe o valor da diaria:"));
-        percentual = Float.parseFloat(JOptionPane.showInputDialog("Informe o % de desconto:"));
+        precoDiaria = Float.parseFloat(JOptionPane.showInputDialog("Informe o valor da diaria: "));
+        percentual = Float.parseFloat(JOptionPane.showInputDialog("Informe o % de desconto: "));
 
         descontoDiaria = precoDiaria * (percentual / 100);
         precoFinal = precoDiaria - descontoDiaria;
