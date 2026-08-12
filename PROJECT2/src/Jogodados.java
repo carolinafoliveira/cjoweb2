@@ -1,4 +1,3 @@
-package PROJECT2.src;
 import java.util.Random;
 
 import javax.swing.JOptionPane;
