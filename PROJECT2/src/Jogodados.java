@@ -4,7 +4,7 @@ import javax.swing.JOptionPane;
 
 public class Jogodados {
     public static void main(String[] args) throws Exception {
-        Random numberGenerator = new Random();
+        Random numberGenerator = new Random(); //Random é usado para numeros aleatorios
         
         int die1, die2, sum, attempts, option, guess;
         boolean isCorrect;
