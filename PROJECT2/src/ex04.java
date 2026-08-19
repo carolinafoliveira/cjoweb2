@@ -7,7 +7,7 @@ public class ex04 {
         int senhaCorreta = 1234, senhaUsuario;
 
         do {
-            senhaUsuario = Integer.parseInt(null, (JOptionPane.showInputDialog("Digite a senha:"));
+            senhaUsuario = Integer.parseInt(JOptionPane.showInputDialog("Digite a senha:"));
 
             if (senhaUsuario != senhaCorreta) {
                 JOptionPane.showMessageDialog(null, "Senha incorreta!\nDeseja tenhar n");
