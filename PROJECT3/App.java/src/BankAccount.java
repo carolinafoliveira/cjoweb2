@@ -2,18 +2,18 @@ public class BankAccount {
 
     // declaração de atribuitos / variáveis de instância
     private int id;
-    private String clientName;
+    private Client client;
     private double balance;
 
     // métodos construtores
-    public BankAccount(int id, String clientName, double balance){
+    public BankAccount(int id, Client client, double balance){
         this.id = id;
-        this.clientName = clientName;
-        this.balance = balance;
+        this.client = client;
+        setBalance(balance);
     }
 
-    public BankAccount(int id, String clientName){
-        this(id, clientName, 0);
+    public BankAccount(int id, Client client){
+        this(id, client, 0);
     }
 
     // métodos acessadores
@@ -25,16 +25,18 @@ public class BankAccount {
         return id;
     }
 
-    public void setClientName(String clientName){
-        this.clientName = clientName;
+    public void setClientName(Client client){
+        this.client = client;
     }
 
-    public String getClientName(){
-        return clientName;
+    public Client getClient(){
+        return client;
     }
 
     public void setBalance(double balance){
-        this.balance = balance;
+        if(balance >= 0) {
+            this.balance = balance;
+        }
     }
 
     public double getBalance(){
@@ -55,7 +57,7 @@ public class BankAccount {
         return 
             "Dados da conta:" + 
             "\nCódigo: " + id +
-            "\nNome do Cliente: " + clientName +
+            "\n" + client +
             "\nSaldo: R$ " + balance;
     }
 }
