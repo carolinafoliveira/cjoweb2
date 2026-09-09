@@ -5,6 +5,9 @@ ano. b. Modifique a data instanciada a partir de dados lidos do usuário para di
 Observe que a impressão da data nesse formato requer que a classe de datas forneça a string necessária. Use a classe JOptionPane para efetuar a leitura.*/
 
 // criando a classe com encapsulamento 
+
+import javax.swing.JOptionPane;
+
 public class Data {
 
     private int dia;
@@ -13,26 +16,48 @@ public class Data {
 
     // construtor com regras de validação
     public Data(int dia, int mes, int ano) {
-
-        if (dia >= 1 && dia <= 30) {
-            this.dia = dia;
+        while (dia < 1 || dia > 30) {
+            dia = Integer.parseInt(JOptionPane.showInputDialog
+                (null, "Dia invalido! Digite outro dia (1-30): "));
         }
+        this.dia = dia;
 
-        if (mes >= 1 && mes <= 12) {
-            this.mes = mes;
-        }
+        // if (dia >= 1 && dia <= 30) {
+        //     this.dia = dia;
+        // }
 
-        if (ano >= 1900) {
-            this.ano = ano;
+        while (mes < 1 || mes > 12) {
+            mes = Integer.parseInt(JOptionPane.showInputDialog(null, 
+                "Mes invalido! Digite outro mes (1-12):"));
         }
+        this.mes = mes;
+
+        // if (mes >= 1 && mes <= 12) {
+        //     this.mes = mes;
+        // }
+
+        while (ano < 1990) {
+            ano = Integer.parseInt(JOptionPane.showInputDialog(
+                null, "Ano Invalido! Digite outro ano (>= 1990)"));
+        }
+        this.ano = ano;
+
+        // if (ano >= 1900) {
+        //     this.ano = ano;
+        // }
     }
 
     // setter do dia
     public void setDia(int dia) {
-        if (dia >= 1 && dia <= 30) {
-            this.dia = dia;
-        }
+
+        while (dia < 1 || dia > 30) {
+
+            dia = Integer.parseInt(JOptionPane.showInputDialog(
+                null,
+                "Dia inválido! Digite outro dia (1-30):"));
     }
+    this.dia = dia;
+}
 
     // getter do dia
     public int getDia() {
@@ -40,11 +65,13 @@ public class Data {
     }
 
     // setter do mes
-    public void setMes(int mes) {
-        if (mes >= 1 && mes <= 12) {
-            this.mes = mes;
+    public  void setMes(int mes){
+        while (mes < 1 || mes > 12) {
+            mes = Integer.parseInt(JOptionPane.showInputDialog(
+                null, "Mes invalidoo! Digite outro mes (1-12)"));
         }
-    }
+        this.mes = mes;
+    }    
 
     // getter do mes
     public int getMes() {
@@ -53,9 +80,15 @@ public class Data {
 
     // setter do ano
     public void setAno(int ano) {
-        if (ano >= 1900) {
-            this.ano = ano;
+        while (ano < 1990) {
+            ano = Integer.parseInt(JOptionPane.showInputDialog(
+                null, "Ano Invalido! Digite outro ano (>= 1990)"));
         }
+        this.ano = ano;
+        
+        // if (ano >= 1900) {
+        //     this.ano = ano;
+        // }
     }
 
     // getter do ano
