@@ -19,4 +19,8 @@ public class EmployeesController {
         }
         return false;
     }
+
+    public List<Employee> getEmployees() {
+        return new ArrayList<>(employeesList);
+    }
 }
