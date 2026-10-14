@@ -1,6 +1,6 @@
 # iFitness
 
-API REST de usuários desenvolvida com Java 17, Spring Boot, Spring Web,
+API REST de usuários desenvolvida com Java 25, Spring Boot, Spring Web,
 Spring Data JPA, SQL Server e Flyway.
 
 Crie o banco `ifitness` no SQL Server e configure a autenticação no ambiente:

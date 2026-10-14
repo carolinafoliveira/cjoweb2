@@ -18,7 +18,7 @@
     <description>Exemplo introdutório de API REST com Spring Boot</description>
 
     <properties>
-        <java.version>17</java.version>
+        <java.version>25</java.version>
     </properties>
 
     <dependencies>
